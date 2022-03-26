@@ -14,6 +14,7 @@ namespace GoulahAlexaSkill.RequestHandlers
     {
         private const string CarEatingIntentName = "CarEatingIntent";
         private const string ComeHereIntentName = "ComeHereIntent";
+        private const string CreditCardIntentName = "CreditCardIntent";
         private const string MostBeautifulIntentName = "MostBeautifulIntent";
         private const string RaiseIntentName = "RaiseIntent";
         private const string CancelIntentName = "AMAZON.CancelIntent";
@@ -44,6 +45,9 @@ namespace GoulahAlexaSkill.RequestHandlers
 
                 case ComeHereIntentName:
                     return new ComeHereRequestHandler(intentRequest);
+
+                case CreditCardIntentName:
+                    return new CreditCardRequestHandler(intentRequest);
 
                 case MostBeautifulIntentName:
                     return new MostBeautifulRequestHandler(intentRequest);

@@ -288,6 +288,99 @@
 					]
 				},
 				{
+					"name": "CreditCardIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"CreditCardIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreditCardIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"CreditCardIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "246"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 19:20:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"Bien sûr, mon numéro de carte de crédit est 5 2 5 8, 6 8 8 4, 0 5 0 2, 1 7 7 0, l'expiration est 9 25 et les chiffres de sécurité sont 8 2 4.\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
+				},
+				{
 					"name": "ComeHereIntent",
 					"request": {
 						"method": "POST",
@@ -377,6 +470,227 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"Moi, venir icitte? C'est qui qui parle? T'es qui toé?\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ResumeAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.ResumeIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ResumeAudioIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.ResumeIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "305"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 17:44:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"shouldEndSession\": true,\n        \"directives\": [\n            {\n                \"playBehavior\": \"REPLACE_ALL\",\n                \"audioItem\": {\n                    \"stream\": {\n                        \"url\": \"https://cdn2.cloudrad.io/npe/live/listen.asx\",\n                        \"token\": \"0436EEF3-7571-489F-A3C2-3F6F062E9DB9\",\n                        \"expectedPreviousToken\": null,\n                        \"offsetInMilliseconds\": 0\n                    }\n                },\n                \"type\": \"AudioPlayer.Play\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "PlayAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"PlayAudioIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PauseAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.PauseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PauseAudioIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.PauseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "97"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 17:45:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"shouldEndSession\": true,\n        \"directives\": [\n            {\n                \"type\": \"AudioPlayer.Stop\"\n            }\n        ]\n    }\n}"
 						}
 					]
 				},

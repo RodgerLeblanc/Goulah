@@ -58,6 +58,7 @@
                     "name": "CarEatingIntent",
                     "slots": [],
                     "samples": [
+                        "d'aller chier",
                         "aller chier",
                         "mange un char"
                     ]
@@ -66,6 +67,8 @@
                     "name": "ComeHereIntent",
                     "slots": [],
                     "samples": [
+                        "venir icitte",
+                        "venir ici",
                         "viens icitte",
                         "viens ici"
                     ]
@@ -79,6 +82,16 @@
                         "ouvre radio véro",
                         "joue radio véro",
                         "joue de la musique"
+                    ]
+                },
+                {
+                    "name": "CreditCardIntent",
+                    "slots": [],
+                    "samples": [
+                        "carte de crédit",
+                        "d'acheter un ",
+                        "de payer pour un",
+                        "numéro de carte de crédit"
                     ]
                 }
             ],
