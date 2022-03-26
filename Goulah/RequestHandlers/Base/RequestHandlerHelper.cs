@@ -12,6 +12,7 @@ namespace GoulahAlexaSkill.RequestHandlers
 {
     public static class RequestHandlerHelper
     {
+        private const string MostBeautifulIntentName = "MostBeautifulIntent";
         private const string CancelIntentName = "AMAZON.CancelIntent";
         private const string HelpIntentName = "AMAZON.HelpIntent";
         private const string StopIntentName = "AMAZON.StopIntent";
@@ -35,7 +36,10 @@ namespace GoulahAlexaSkill.RequestHandlers
         {
             switch (intentRequest.Intent.Name)
             {
+                case MostBeautifulIntentName:
                 case FallbackIntentName:
+                    return new MostBeautifulRequestHandler(intentRequest);
+
                 case CancelIntentName:
                     return new CancelRequestHandler(intentRequest);
 
