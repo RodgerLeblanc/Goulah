@@ -1,9 +1,5 @@
-﻿using Alexa.NET;
-using Alexa.NET.Request.Type;
-using Alexa.NET.Response;
+﻿using Alexa.NET.Request.Type;
 using GoulahAlexaSkill.ResponseTexts;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace GoulahAlexaSkill.RequestHandlers
 {
