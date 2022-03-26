@@ -1,0 +1,88 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "monsieur goulah",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MostBeautifulIntent",
+                    "slots": [],
+                    "samples": [
+                        "plus beau",
+                        "plus joli",
+                        "plus belle",
+                        "plus jolie"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RaiseIntent",
+                    "slots": [
+                        {
+                            "name": "raise",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "augmentation à {raise} dollars",
+                        "augmentation de {raise} dollars",
+                        "promotion",
+                        "plus d'argent",
+                        "bonus",
+                        "augmentation"
+                    ]
+                },
+                {
+                    "name": "CarEatingIntent",
+                    "slots": [],
+                    "samples": [
+                        "aller chier",
+                        "mange un char"
+                    ]
+                },
+                {
+                    "name": "ComeHereIntent",
+                    "slots": [],
+                    "samples": [
+                        "viens icitte",
+                        "viens ici"
+                    ]
+                },
+                {
+                    "name": "PlayAudioIntent",
+                    "slots": [],
+                    "samples": [
+                        "met radio véro",
+                        "part radio véro",
+                        "ouvre radio véro",
+                        "joue radio véro",
+                        "joue de la musique"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
