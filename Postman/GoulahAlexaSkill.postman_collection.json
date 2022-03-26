@@ -193,6 +193,285 @@
 							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"Douze dollars de l'heure, c'est pas assez?\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "CarEatingIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"CarEatingIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CarEatingIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"CarEatingIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "175"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 16:33:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"Pardon? J'espère pour toi que j'ai mal compris ce que tu viens de me dire.\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ComeHereIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"ComeHereIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ComeHereIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"ComeHereIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "154"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 16:34:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"Moi, venir icitte? C'est qui qui parle? T'es qui toé?\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "RaiseIntent with amount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"RaiseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\",\r\n            \"slots\": {\r\n\t\t\t\t\"raise\": {\r\n\t\t\t\t\t\"name\": \"raise\",\r\n\t\t\t\t\t\"value\": \"10\",\r\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\r\n\t\t\t\t\t\"source\": \"USER\",\r\n\t\t\t\t\t\"slotValue\": {\r\n\t\t\t\t\t\t\"type\": \"Simple\",\r\n\t\t\t\t\t\t\"value\": \"10\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "RaiseIntent with amount",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"RaiseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\",\r\n            \"slots\": {\r\n\t\t\t\t\"raise\": {\r\n\t\t\t\t\t\"name\": \"raise\",\r\n\t\t\t\t\t\"value\": \"10\",\r\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\r\n\t\t\t\t\t\"source\": \"USER\",\r\n\t\t\t\t\t\"slotValue\": {\r\n\t\t\t\t\t\t\"type\": \"Simple\",\r\n\t\t\t\t\t\t\"value\": \"10\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "133"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 16:21:40 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"10 de plus? Y'en ai pas question.\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
 				}
 			]
 		}
