@@ -46,7 +46,6 @@ namespace GoulahAlexaSkill.RequestHandlers
                     return new ComeHereRequestHandler(intentRequest);
 
                 case MostBeautifulIntentName:
-                case FallbackIntentName:
                     return new MostBeautifulRequestHandler(intentRequest);
 
                 case RaiseIntentName:
@@ -56,6 +55,7 @@ namespace GoulahAlexaSkill.RequestHandlers
                     return new CancelRequestHandler(intentRequest);
 
                 case HelpIntentName:
+                case FallbackIntentName:
                     return new HelpRequestHandler(intentRequest);
 
                 case StopIntentName:
