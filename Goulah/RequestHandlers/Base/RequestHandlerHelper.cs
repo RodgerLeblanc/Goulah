@@ -19,9 +19,6 @@ namespace GoulahAlexaSkill.RequestHandlers
         private const string RaiseIntentName = "RaiseIntent";
         private const string CancelIntentName = "AMAZON.CancelIntent";
         private const string HelpIntentName = "AMAZON.HelpIntent";
-        private const string PlayAudioIntentName = "PlayAudioIntent";
-        private const string PauseAudioIntentName = "AMAZON.PauseIntent";
-        private const string ResumeAudioIntentName = "AMAZON.ResumeIntent";
         private const string StopIntentName = "AMAZON.StopIntent";
         private const string FallbackIntentName = "AMAZON.FallbackIntent";
 
@@ -64,13 +61,6 @@ namespace GoulahAlexaSkill.RequestHandlers
                 case HelpIntentName:
                 case FallbackIntentName:
                     return new HelpRequestHandler(intentRequest);
-
-                case PauseAudioIntentName:
-                    return new PauseAudioRequestHandler(intentRequest);
-
-                case PlayAudioIntentName:
-                case ResumeAudioIntentName:
-                    return new ResumeAudioRequestHandler(intentRequest);
 
                 case StopIntentName:
                     return new StopRequestHandler(intentRequest);
