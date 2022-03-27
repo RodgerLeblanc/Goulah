@@ -6,7 +6,7 @@
         {
             Add("Retourne travailler.");
             Add("J'espère c'est fini les niaiseries?");
-            Add("J'ai un feed Facebook à aller lire, au revoir.");
+            Add("J'ai un feed Facebook à aller lire, déranges-moi pu.");
         }
     }
 }
