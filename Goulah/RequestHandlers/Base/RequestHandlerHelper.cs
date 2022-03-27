@@ -17,6 +17,7 @@ namespace GoulahAlexaSkill.RequestHandlers
         private const string CreditCardIntentName = "CreditCardIntent";
         private const string MostBeautifulIntentName = "MostBeautifulIntent";
         private const string RaiseIntentName = "RaiseIntent";
+        private const string TalkToMalyIntentName = "TalkToMalyIntent";
         private const string CancelIntentName = "AMAZON.CancelIntent";
         private const string HelpIntentName = "AMAZON.HelpIntent";
         private const string StopIntentName = "AMAZON.StopIntent";
@@ -54,6 +55,9 @@ namespace GoulahAlexaSkill.RequestHandlers
 
                 case RaiseIntentName:
                     return new RaiseIntentHandler(intentRequest);
+
+                case TalkToMalyIntentName:
+                    return new TalkToMalyRequestHandler(intentRequest);
 
                 case CancelIntentName:
                     return new CancelRequestHandler(intentRequest);

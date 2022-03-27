@@ -74,6 +74,14 @@
                         "de payer pour un",
                         "numéro de carte de crédit"
                     ]
+                },
+                {
+                    "name": "TalkToMaly",
+                    "slots": [],
+                    "samples": [
+                        "parler à Maly",
+                        "parle à Maly"
+                    ]
                 }
             ],
             "types": []

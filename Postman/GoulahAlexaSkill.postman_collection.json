@@ -786,6 +786,99 @@
 							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"PlainText\",\n            \"text\": \"10 de plus? Y'en ai pas question.\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "TalkToMalyIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"TalkToMalyIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/Goulah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"Goulah"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TalkToMalyIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"TalkToMalyIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:7071/api/Goulah",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7071",
+									"path": [
+										"api",
+										"Goulah"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "367"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 03:06:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"outputSpeech\": {\n            \"type\": \"SSML\",\n            \"ssml\": \"\\r\\n<speak>\\r\\n    <amazon:effect name=\\\"whispered\\\">Maly</amazon:effect>\\r\\n    <break time=\\\"500ms\\\"/>\\r\\n    <amazon:effect name=\\\"whispered\\\">Maly</amazon:effect>\\r\\n    <break time=\\\"2s\\\"/>\\r\\n    <amazon:effect name=\\\"whispered\\\">Ta yeule</amazon:effect>\\r\\n</speak>\"\n        },\n        \"shouldEndSession\": true\n    }\n}"
+						}
+					]
 				}
 			]
 		}
