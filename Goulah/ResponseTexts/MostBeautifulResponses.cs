@@ -6,7 +6,7 @@
         {
             Add("Sûrement pas toi.");
             Add("Maly.");
-            Add("Yves fais dire qu'il n'a pas le temps pour ces niaiseries là.");
+            Add("Hein? J'ai pas le temps pour ces niaiseries là.");
         }
     }
 }

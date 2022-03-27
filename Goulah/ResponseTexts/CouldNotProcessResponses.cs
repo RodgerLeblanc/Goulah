@@ -4,9 +4,9 @@
     {
         public CouldNotProcessResponses()
         {
-            Add("J'ai mal compris, mais Yves fais dire de retourner au travail.");
-            Add("Voyelle... Consonne... Consonne... Voyelle...");
-            Add("Est-ce que c'est Maly qui a marmonné de quoi? J'air rien compris.");
+            Add("J'ai mal compris, mais de toute façon, retourne au travail.");
+            Add("Je comprends rien quand tu parles.");
+            Add("J'air rien compris. Est-ce que c'est Maly qui a marmonné de quoi?");
         }
     }
 }
