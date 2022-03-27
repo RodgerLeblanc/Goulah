@@ -4,9 +4,9 @@
     {
         public HelpResponses()
         {
-            Add("Vous pouvez demander : Monsieur Goulah, est-ce que je peux avoir une augmentation?");
-            Add("Vous pouvez demander : Monsieur Goulah, parle à Maly.");
-            Add("Vous pouvez demander : Monsieur Goulah, ferme ta yeule?");
+            Add("Vous pouvez demander : Est-ce que je peux avoir une augmentation?");
+            Add("Vous pouvez demander : Parle à Maly.");
+            Add("Vous pouvez demander : Ferme ta yeule?");
         }
     }
 }
