@@ -30,14 +30,6 @@
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.PauseIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.ResumeIntent",
-                    "samples": []
-                },
-                {
                     "name": "RaiseIntent",
                     "slots": [
                         {
@@ -71,17 +63,6 @@
                         "venir ici",
                         "viens icitte",
                         "viens ici"
-                    ]
-                },
-                {
-                    "name": "PlayAudioIntent",
-                    "slots": [],
-                    "samples": [
-                        "met radio véro",
-                        "part radio véro",
-                        "ouvre radio véro",
-                        "joue radio véro",
-                        "joue de la musique"
                     ]
                 },
                 {
